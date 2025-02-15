@@ -6,8 +6,6 @@ int gcd(int m ,int n){
     }
     return gcd(n, m%n);
 }
-
-
 int main(int cnt, char *argv[]){
     int m,n;
     sscanf(argv[1], "%i", &m);
@@ -15,7 +13,6 @@ int main(int cnt, char *argv[]){
     if(m ==0 || n==0){
         return -1;
     }
-
     printf("GCD of %i and %i = %i\n", m, n, gcd(m,n));
     return m;
 }
